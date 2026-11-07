@@ -5,11 +5,12 @@ Site Video* (Anoushka Ranjan Kuriakos, IIT Madras, 2026). It turns a video plus 
 predicates, into a video scene graph (object mask tubes and time-stamped ⟨subject, predicate, object⟩ relations)
 with no training, and answers plain-language questions about it.
 
-```
-video ─► SAM3 tubes ─► 6 s windows ─┬─► caption branch: DAM descriptions ► PixelRefer captions ► LLM triplets ─┐
-                                    └─► direct branch: numbered-mark keyframes ► Qwen2.5-VL triplets ───────────┴─► fused graph
-                                                                              ─► classes corrected from DAM ─► graph RAG
-```
+![The pipeline, with real outputs for one window](docs/pipeline.png)
+
+*The pipeline on one 6-second window of a PSG4D-GTA video: SAM3 mask tubes, the time window, the caption branch
+(DAM description, PixelRefer caption, extracted triplets), the direct branch (numbered-mark keyframe, Qwen2.5-VL
+output), their fusion into the video scene graph, and a question answered by graph RAG. After fusion, a last step
+corrects each object's class from its DAM description (`tools/relabel_dam.py`).*
 
 ## Setup
 
