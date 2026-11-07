@@ -1,0 +1,42 @@
+{
+ "things": [
+  "person",
+  "excavator",
+  "dump_truck",
+  "wheel_loader",
+  "bulldozer",
+  "car"
+ ],
+ "stuff": [
+  "ground",
+  "soil_pile",
+  "sky"
+ ],
+ "prompts": {
+  "dump_truck": "dump truck",
+  "wheel_loader": "wheel loader",
+  "soil_pile": "dirt pile"
+ },
+ "predicates": [
+  "approaching",
+  "behind",
+  "carrying",
+  "digging in",
+  "driving on",
+  "dumping into",
+  "in front of",
+  "leaving",
+  "loading",
+  "moving on",
+  "next to",
+  "on",
+  "parked on",
+  "pouring onto",
+  "standing on",
+  "swinging toward",
+  "waiting for",
+  "walking on",
+  "watching",
+  "working on"
+ ]
+}

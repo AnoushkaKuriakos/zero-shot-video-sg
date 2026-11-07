@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+work/
+data/
+out/
+out_smoke/
+logs/
+third_party/
+*.mp4
+*.pth
+*.safetensors
