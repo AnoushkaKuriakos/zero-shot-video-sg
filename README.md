@@ -87,5 +87,3 @@ classes, so leave it off for other domains or write rules for yours.
 * **Construction:** `tools/build_construction_root.py` on the Earthmoving Equipment data set (Roberts and
   Golparvar-Fard 2019, Mendeley 10.17632/fyw6ps2d2j.1), then `run_all.sh` without the filter and
   `tools/construction_metrics.py`.
-
-Numbers can differ slightly between runs: the direct branch and DAM sample at temperature 0.2.
